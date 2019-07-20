@@ -22,9 +22,11 @@ Source1:        bash_completion_tmux.sh
 
 
 BuildRequires:  gcc
-BuildRequires:  ncurses-devel
-BuildRequires:  libevent-devel
 BuildRequires:  libutempter-devel
+BuildRequires:  pkgconfig(libevent)
+BuildRequires:  pkgconfig(tinfo)
+BuildRequires:  pkgconfig(ncurses)
+BuildRequires:  pkgconfig(ncursesw)
 
 %description
 tmux is a "terminal multiplexer."  It enables a number of terminals (or
