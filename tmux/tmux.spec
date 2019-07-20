@@ -1,7 +1,7 @@
 %global _hardened_build 1
 
 Name:           tmux
-Version:        2.9
+Version:        3.0
 Release:        0%{?dist}
 Summary:        A terminal multiplexer
 
@@ -33,7 +33,7 @@ intended to be a simple, modern, BSD-licensed alternative to programs such
 as GNU Screen.
 
 %prep
-%autosetup -n tmux-2.9-rc3
+%autosetup -n tmux-3.0-rc3
 
 %build
 %configure
@@ -65,12 +65,15 @@ if [ "$1" = 0 ] && [ -f %{_sysconfdir}/shells ] ; then
 fi
 
 %files
-%doc CHANGES TODO
+%doc CHANGES README README.ja
 %{_bindir}/tmux
 %{_mandir}/man1/tmux.1.*
 %{_datadir}/bash-completion/completions/tmux
 
 %changelog
+* Sat Jul 20 2019 Filipe Rosset <rosset.filipe@gmail.com> - 3.0-rc3-0
+- Update to 3.0-rc3 Fedora COPR
+
 * Wed Mar 27 2019 Filipe Rosset <rosset.filipe@gmail.com> - 2.9-rc3-0
 - rebuilt for 2.9-rc3 copr
 
