@@ -9,7 +9,7 @@ Summary:        A terminal multiplexer
 # 3 clause BSD licensed.
 License:        ISC and BSD
 URL:            https://tmux.github.io/
-Source0:        https://github.com/tmux/%{name}/releases/download/%{version}/%{name}-%{version}-rc4.tar.gz
+Source0:        https://github.com/tmux/%{name}/releases/download/%{version}/%{name}-%{version}-rc5.tar.gz
 # Examples has been removed - so include the bash_completion here
 Source1:        bash_completion_tmux.sh
 #Patch0:         749f67b7d801eed03345fef9c04206fbd079c3cb.patch
@@ -35,7 +35,7 @@ intended to be a simple, modern, BSD-licensed alternative to programs such
 as GNU Screen.
 
 %prep
-%autosetup -n tmux-3.0-rc4
+%autosetup -n tmux-3.0-rc5
 
 %build
 %configure
@@ -73,11 +73,8 @@ fi
 %{_datadir}/bash-completion/completions/tmux
 
 %changelog
-* Fri Aug 02 2019 Filipe Rosset <rosset.filipe@gmail.com> - 3.0-rc4-0
-- 3.0-rc4 copr
-
-* Sat Jul 20 2019 Filipe Rosset <rosset.filipe@gmail.com> - 3.0-rc3-0
-- Update to 3.0-rc3 Fedora COPR
+* Sat Sep 21 2019 Filipe Rosset <rosset.filipe@gmail.com> - 3.0-rc5-0
+- 3.0-rc5 copr
 
 * Wed Mar 27 2019 Filipe Rosset <rosset.filipe@gmail.com> - 2.9-rc3-0
 - rebuilt for 2.9-rc3 copr
